@@ -27,8 +27,8 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mt-6 text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl"
             >
-              Revolutionizing marine conservation with AI-powered whale detection technology. 
-              Join our waitlist to be the first to implement our cutting-edge solution.
+              Revolutionizing cetacean detection with model distillation and edge AI technology.
+              Our customizable solution identifies multiple whale species while meeting energy constraints of deep-sea hardware.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

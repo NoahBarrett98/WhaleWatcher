@@ -80,8 +80,9 @@ export default function WaitlistForm() {
             Join Our Waitlist
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Be among the first to implement our revolutionary cetacean detection technology. 
-            We'll notify you as soon as CetaDetect is ready for deployment.
+            Join our waitlist for organizations interested in monitoring cetacean movement. 
+            CetaDetect empowers researchers, conservationists, and marine industries with adaptable, 
+            customizable solutions that work in energy-constrained environments.
           </p>
         </motion.div>
 

@@ -18,9 +18,9 @@ export default function About() {
               About CetaDetect
             </h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-300">
-              Our mission is to revolutionize marine conservation through cutting-edge technology. 
-              CetaDetect was born from the need to better understand and protect cetacean populations 
-              around the world.
+              Our mission is to empower organizations monitoring cetacean movement with adaptable, 
+              customizable detection systems. We build general-purpose detectors that can be tailored 
+              to meet the specific needs of research, conservation, and marine industry applications.
             </p>
             <div className="mt-8 space-y-4">
               <motion.div 

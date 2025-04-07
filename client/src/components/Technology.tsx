@@ -20,7 +20,7 @@ export default function Technology() {
             Our Technology
           </h2>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            CetaDetect combines multiple cutting-edge technologies to create an unparalleled detection system.
+            CetaDetect overcomes limitations of current PAM statistical libraries by leveraging state-of-the-art deep learning and edge computing.
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ export default function Technology() {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Model Distillation</h3>
                     <p className="mt-2 text-gray-300">
-                      We compress large neural networks into smaller, equally powerful models that can run on resource-constrained devices without sacrificing accuracy.
+                      Recent breakthroughs allow us to distill very large ML models into smaller, energy-efficient versions with minimal accuracy loss, ideal for deep-sea hardware constraints.
                     </p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function Technology() {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Passive Acoustic Monitoring</h3>
                     <p className="mt-2 text-gray-300">
-                      Our hydrophone arrays capture underwater sounds and feed them into our AI system, allowing for non-invasive cetacean monitoring across vast ocean areas.
+                      Unlike current PAM systems limited to specific whale calls, our solution identifies multiple species simultaneously, overcoming the limitations of traditional statistical libraries.
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Technology() {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Edge AI Accelerators</h3>
                     <p className="mt-2 text-gray-300">
-                      Custom hardware accelerators enable real-time inference on edge devices deployed directly in marine environments, eliminating the need for constant connectivity.
+                      Emerging edge AI accelerators enable our ML models to run in energy-constrained environments, making our solution adaptable and cost-effective for long-term ocean deployments.
                     </p>
                   </div>
                 </div>

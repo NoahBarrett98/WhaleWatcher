@@ -4,18 +4,18 @@ import { ClipboardList, BarChart2, Lightbulb } from 'lucide-react';
 
 const features = [
   {
-    title: "Real-time Detection",
-    description: "Identify and track cetacean species in real-time with 98.7% accuracy using our advanced AI algorithms.",
+    title: "Multi-Species Detection",
+    description: "Unlike traditional PAM systems limited to specific calls, our technology identifies multiple whale species simultaneously with high accuracy.",
     icon: <ClipboardList className="h-6 w-6 text-white" />
   },
   {
-    title: "Passive Acoustic Monitoring",
-    description: "Our non-invasive acoustic sensors can detect cetaceans up to 15km away with minimal environmental impact.",
+    title: "Fully Customizable",
+    description: "Our general-purpose detectors can be tailored to the specific needs of your organization, whether for research, conservation, or marine industry.",
     icon: <BarChart2 className="h-6 w-6 text-white" />
   },
   {
-    title: "Edge AI Processing",
-    description: "Process data directly on our low-power edge devices, providing instant results even in remote ocean locations.",
+    title: "Energy-Efficient Solutions",
+    description: "Distilled ML models and edge AI accelerators allow our system to operate in energy-constrained deep-sea environments for extended periods.",
     icon: <Lightbulb className="h-6 w-6 text-white" />
   }
 ];
@@ -35,7 +35,7 @@ export default function Features() {
             Revolutionary Features
           </h2>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            Our system combines cutting-edge technologies to provide unprecedented accuracy in cetacean detection.
+            Our adaptable, customizable cetacean detection systems overcome the limitations of current PAM technology.
           </p>
         </motion.div>
 
