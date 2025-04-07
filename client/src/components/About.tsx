@@ -1,11 +1,65 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import { Check, ClipboardList, BarChart2, Lightbulb } from 'lucide-react';
+
+const features = [
+  {
+    title: "Multi-Species Detection",
+    description: "Unlike traditional PAM systems limited to specific calls, our technology identifies multiple whale species simultaneously with high accuracy.",
+    icon: <ClipboardList className="h-6 w-6 text-white" />
+  },
+  {
+    title: "Fully Customizable",
+    description: "Our general-purpose detectors can be tailored to the specific needs of your organization, whether for research, conservation, or marine industry.",
+    icon: <BarChart2 className="h-6 w-6 text-white" />
+  },
+  {
+    title: "Energy-Efficient Solutions",
+    description: "Distilled ML models and edge AI accelerators allow our system to operate in energy-constrained deep-sea environments for extended periods.",
+    icon: <Lightbulb className="h-6 w-6 text-white" />
+  }
+];
 
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-gradient-to-b from-[#020617] to-[#0f172a] relative">
+    <section id="about" className="py-16 bg-gradient-to-b from-[#0c4a6e]/40 to-[#0f172a] relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+            About CetaDetect
+          </h2>
+          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+            Our adaptable, customizable cetacean detection systems overcome the limitations of current PAM technology.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative group"
+            >
+              <div className="bg-[#1e293b]/60 rounded-xl overflow-hidden shadow-xl transition-all duration-300 border border-gray-800 hover:border-[#0d9488]/50 p-6 h-full flex flex-col">
+                <div className="p-2 bg-gradient-to-br from-[#0d9488] to-[#0284c7] rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-300 mb-4 flex-grow">{feature.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -14,9 +68,6 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-5"
           >
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              About CetaDetect
-            </h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-300">
               Our revolutionary two-part solution harnesses artificial intelligence and edge computing to enable 
               power-efficient detectors that can identify multiple whale species simultaneously.
