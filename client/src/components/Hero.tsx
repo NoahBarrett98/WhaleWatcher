@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-          <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+          <div className="text-center mx-auto max-w-3xl">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-8 sm:flex sm:justify-center lg:justify-start"
+              className="mt-8 flex justify-center space-x-4"
             >
               <div className="rounded-md shadow">
                 <Button
@@ -58,7 +58,7 @@ export default function Hero() {
                   <a href="#waitlist">Join the Waitlist</a>
                 </Button>
               </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
+              <div>
                 <Button
                   asChild
                   variant="outline"
@@ -70,35 +70,6 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
-          >
-            <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-              <div className="relative block w-full bg-[#1e293b] rounded-lg overflow-hidden">
-                <motion.img
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ 
-                    duration: 6, 
-                    repeat: Infinity, 
-                    ease: "easeInOut" 
-                  }}
-                  className="w-full"
-                  src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Whale swimming in ocean"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] opacity-60"></div>
-                <div className="absolute bottom-0 p-4">
-                  <div className="backdrop-blur-md bg-white/5 p-2 rounded-lg inline-flex items-center border border-white/10">
-                    <div className="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                    <span className="text-sm font-medium">Cetacean detected</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
       <div className="absolute bottom-0 inset-x-0">

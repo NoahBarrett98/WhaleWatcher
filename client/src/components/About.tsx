@@ -87,11 +87,26 @@ export default function About() {
             <div className="relative">
               <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0">
                 <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl">
-                  <img 
-                    className="object-cover"
-                    src="https://images.unsplash.com/photo-1570939274717-7eda259b50ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=960&q=80" 
-                    alt="Whale breaching the ocean surface" 
-                  />
+                  <div className="relative bg-[#1e293b] w-full h-full rounded-lg overflow-hidden">
+                    <motion.img
+                      animate={{ y: [0, -10, 0] }}
+                      transition={{ 
+                        duration: 6, 
+                        repeat: Infinity, 
+                        ease: "easeInOut" 
+                      }}
+                      className="w-full h-full object-cover"
+                      src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                      alt="Whale swimming in ocean"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] opacity-60"></div>
+                    <div className="absolute bottom-0 p-4">
+                      <div className="backdrop-blur-md bg-white/5 p-2 rounded-lg inline-flex items-center border border-white/10">
+                        <div className="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                        <span className="text-sm font-medium">Cetacean detected</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
