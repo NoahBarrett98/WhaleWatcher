@@ -34,9 +34,6 @@ export default function Features() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Revolutionary Features
           </h2>
-          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            Our adaptable, customizable cetacean detection systems overcome the limitations of current PAM technology.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
