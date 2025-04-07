@@ -18,9 +18,13 @@ export default function About() {
               About CetaDetect
             </h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-300">
-              Our mission is to empower organizations monitoring cetacean movement with adaptable, 
-              customizable detection systems. We build general-purpose detectors that can be tailored 
-              to meet the specific needs of research, conservation, and marine industry applications.
+              Our revolutionary two-part solution harnesses artificial intelligence and edge computing to enable 
+              power-efficient detectors that can identify multiple whale species simultaneously.
+            </p>
+            <p className="mt-3 max-w-3xl text-lg text-gray-300">
+              First, we provide fully trainable, low-power deep learning models for PAM-based cetacean detection. 
+              Second, we offer a suite of pre-trained models with software for annotating custom datasets and training 
+              specialized models for specific research and conservation needs.
             </p>
             <div className="mt-8 space-y-4">
               <motion.div 
