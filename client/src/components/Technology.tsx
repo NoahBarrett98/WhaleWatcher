@@ -14,18 +14,18 @@ export default function Technology() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Our Technology
           </h2>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            CetaDetect overcomes limitations of current PAM statistical libraries by leveraging state-of-the-art deep learning and edge computing.
+            Thalios.ai overcomes limitations of current low-power whale detectors by leveraging state-of-the-art deep learning and edge computing.
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

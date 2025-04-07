@@ -5,7 +5,7 @@ import WavesAnimation from './WavesAnimation';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-32 sm:pt-32 sm:pb-40">
+    <section className="relative overflow-hidden min-h-screen w-full flex items-center justify-center">
       {/* Wave animation background */}
       <div className="absolute inset-0 w-full h-full z-0">
         <WavesAnimation 
@@ -18,9 +18,9 @@ export default function Hero() {
           direction="left"
         />
       </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-          <div className="text-center mx-auto max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="flex justify-center">
+          <div className="text-center max-w-3xl">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function Hero() {
                   size="lg"
                   className="w-full sm:w-auto text-[#14b8a6] bg-white hover:bg-gray-50 px-8 py-3 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#technology">Learn More</a>
+                  <a href="#about">Learn More</a>
                 </Button>
               </div>
             </motion.div>

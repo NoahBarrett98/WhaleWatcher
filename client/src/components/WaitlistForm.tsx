@@ -81,7 +81,7 @@ export default function WaitlistForm() {
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Join our waitlist for organizations interested in monitoring cetacean movement. 
-            CetaDetect empowers researchers, conservationists, and marine industries with adaptable, 
+            Thalios.ai empowers researchers, conservationists, and marine industries with adaptable, 
             customizable solutions that work in energy-constrained environments.
           </p>
         </motion.div>

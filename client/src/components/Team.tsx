@@ -24,7 +24,8 @@ export default function Team() {
     {
       name: 'Sam Silver',
       role: 'Software Engineer',
-      phone: '(902) 318-8820',
+      // phone: '(902) 318-8820',
+      phone: '',
       email: 'sam55silver@gmail.com',
       expertise: 'Software and Data Engineer; Marketing and Outreach; Finances',
       image: 'https://randomuser.me/api/portraits/men/41.jpg'
@@ -32,7 +33,8 @@ export default function Team() {
     {
       name: 'Jessica Doman',
       role: 'Conservation Specialist',
-      phone: '(905) 407-2664',
+      // phone: '(905) 407-2664',
+      phone: '',
       email: 'jess.doman10@gmail.com',
       expertise: 'Wildlife Conservation, Environmental Management, and Marine Conservation',
       image: 'https://randomuser.me/api/portraits/women/47.jpg'
@@ -40,7 +42,8 @@ export default function Team() {
     {
       name: 'Harvey Wang',
       role: 'Ocean Physicist',
-      phone: '(902) 220-4468',
+      // phone: '(902) 220-4468',
+      phone: '',
       email: 'harvey@dal.ca',
       expertise: 'Diversity measures; renewable energy; ocean physics; signal processing',
       image: 'https://randomuser.me/api/portraits/men/68.jpg'
@@ -63,15 +66,8 @@ export default function Team() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Our Team
           </h2>
-          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            We are passionate about the protection of endangered species, such as the North Atlantic Right Whale. 
-            Our team unites specialties in wildlife conservation and resource management with technical innovation 
-            and entrepreneurship.
-          </p>
           <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
-            Our well-rounded team consists of professionals in data science and software engineering, complemented 
-            by academics in environmental science, computer science, and physics. We are actively seeking ways to turn 
-            our technical expertise into business ventures.
+          We’re a multidisciplinary team using low-power deep learning to improve acoustic detection of marine mammals. With expertise in conservation, data science, and engineering, we’re building scalable tools that turn cutting-edge research into real-world impact for ocean monitoring.
           </p>
         </motion.div>
 
@@ -85,13 +81,6 @@ export default function Team() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-[#1e293b]/60 rounded-xl overflow-hidden shadow-xl transition-all duration-300 border border-gray-800 hover:border-[#0d9488]/50"
             >
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover object-center transform transition-transform duration-500 hover:scale-110"
-                />
-              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">{member.name}</h3>
                 <p className="text-sm text-[#2dd4bf] font-medium mt-1">{member.role}</p>

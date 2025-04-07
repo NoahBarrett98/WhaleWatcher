@@ -5,7 +5,7 @@ import { ClipboardList, BarChart2, Lightbulb } from 'lucide-react';
 const features = [
   {
     title: "Multi-Species Detection",
-    description: "Unlike traditional PAM systems limited to specific calls, our technology identifies multiple whale species simultaneously with high accuracy using fully trainable, low-power deep learning models.",
+    description: "Unlike traditional low-power whale detectors limited to specific calls, our technology identifies multiple whale species simultaneously with high accuracy using fully trainable, low-power deep learning models.",
     icon: <ClipboardList className="h-6 w-6 text-white" />
   },
   {
@@ -32,45 +32,24 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            About CetaDetect
+            About <span className="text-3xl sm:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#2dd4bf] to-[#38bdf8]">Thalios</span><span className="text-3xl sm:text-4xl font-extrabold text-white">.ai</span>
           </h2>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-            Our adaptable, customizable cetacean detection systems overcome the limitations of current PAM technology.
+            Our adaptable, customizable cetacean detection systems overcome the limitations of current low-power whale detection technology.
           </p>
         </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group"
-            >
-              <div className="bg-[#1e293b]/60 rounded-xl overflow-hidden shadow-xl transition-all duration-300 border border-gray-800 hover:border-[#0d9488]/50 p-6 h-full flex flex-col">
-                <div className="p-2 bg-gradient-to-br from-[#0d9488] to-[#0284c7] rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                <p className="text-gray-300 mb-4 flex-grow">{feature.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto mt-10"
+          className="max-w-3xl mx-auto mb-12"
         >
           <div className="relative">
-            <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:p-0">
-              <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl">
-                <div className="relative bg-[#1e293b] w-full h-full rounded-lg overflow-hidden">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] rounded-xl overflow-hidden shadow-xl">
+                <div className="absolute inset-0 bg-[#1e293b] rounded-lg overflow-hidden">
                   <motion.img
                     animate={{ y: [0, -10, 0] }}
                     transition={{ 
@@ -94,6 +73,27 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative group"
+            >
+              <div className="bg-[#1e293b]/60 rounded-xl overflow-hidden shadow-xl transition-all duration-300 border border-gray-800 hover:border-[#0d9488]/50 p-6 h-full flex flex-col">
+                <div className="p-2 bg-gradient-to-br from-[#0d9488] to-[#0284c7] rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-300 mb-4 flex-grow">{feature.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
