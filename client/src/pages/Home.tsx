@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Technology from '@/components/Technology';
 import About from '@/components/About';
+import Team from '@/components/Team';
 import WaitlistForm from '@/components/WaitlistForm';
 import Footer from '@/components/Footer';
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Technology />
       <About />
+      <Team />
       <WaitlistForm />
       <Footer />
     </div>
