@@ -33,9 +33,9 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
             >
               <span className="block mt-1 text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                <span className="block text-white">CetaDetect</span>
+                <span className="block text-white">Advanced Cetacean</span>
                 <span className="block terminal-glow bg-clip-text text-transparent bg-gradient-to-r from-[#5eead4] to-[#38bdf8]">
-                  {`>_`} detection_system.exe
+                  Detection System
                 </span>
               </span>
             </motion.h1>
@@ -58,9 +58,9 @@ export default function Hero() {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto bg-[#0d9488] hover:bg-[#0f766e] text-white px-8 py-3 md:py-4 md:text-lg md:px-10 font-mono border border-[#2dd4bf]/50"
+                  className="w-full sm:w-auto bg-[#0d9488] hover:bg-[#0f766e] text-white px-8 py-3 md:py-4 md:text-lg md:px-10 border border-[#2dd4bf]/50"
                 >
-                  <a href="#waitlist">{`>`} Join_Waitlist()</a>
+                  <a href="#waitlist">Join the Waitlist</a>
                 </Button>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -68,9 +68,9 @@ export default function Hero() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto border-[#14b8a6] text-[#14b8a6] hover:bg-[#14b8a6]/10 px-8 py-3 md:py-4 md:text-lg md:px-10 font-mono"
+                  className="w-full sm:w-auto border-[#14b8a6] text-[#14b8a6] hover:bg-[#14b8a6]/10 px-8 py-3 md:py-4 md:text-lg md:px-10"
                 >
-                  <a href="#technology">{`>`} Learn_More()</a>
+                  <a href="#technology">Learn More</a>
                 </Button>
               </div>
             </motion.div>
