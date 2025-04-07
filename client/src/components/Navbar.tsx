@@ -38,6 +38,12 @@ export default function Navbar() {
               >
                 About
               </a>
+              <a 
+                href="#team" 
+                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Team
+              </a>
             </div>
           </nav>
           
@@ -87,6 +93,13 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               About
+            </a>
+            <a
+              href="#team"
+              className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Team
             </a>
             <a
               href="#waitlist"
