@@ -2,10 +2,23 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { WaveDivider } from '@/components/ui/wave-divider';
+import WavesAnimation from './WavesAnimation';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-24 pb-32 sm:pt-32 sm:pb-40">
+      {/* Wave animation background */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <WavesAnimation 
+          className="absolute inset-0 w-full h-full"
+          baseColor={[0, 160, 255]}
+          waveCount={12}
+          amplitude={30}
+          baseSpeed={0.005}
+          waveSpacing={50}
+          direction="left"
+        />
+      </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
