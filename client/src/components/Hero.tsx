@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { WaveDivider } from '@/components/ui/wave-divider';
 import WavesAnimation from './WavesAnimation';
 
 export default function Hero() {
@@ -72,9 +71,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 inset-x-0">
-        <WaveDivider />
-      </div>
+
     </section>
   );
 }
