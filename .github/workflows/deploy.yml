@@ -25,19 +25,23 @@ jobs:
           cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
-        run: |
-          cd client
-          npm ci
+        run: npm ci
       
-      - name: Build
+      - name: Build client with Vite
         run: |
-          cd client
-          npm run build
-
+          npx vite build --config client/vite.config.ts
+          
+      - name: List directories
+        run: |
+          echo "Root directory:"
+          ls -la
+          echo "Dist directory:"
+          ls -la dist || echo "dist directory not found"
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: client/dist
+          path: dist
 
   deploy:
     environment:
