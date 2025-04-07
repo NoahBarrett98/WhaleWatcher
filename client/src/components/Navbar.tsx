@@ -21,22 +21,16 @@ export default function Navbar() {
           <nav className="hidden md:block">
             <div className="flex items-baseline space-x-8">
               <a 
-                href="#features" 
+                href="#about" 
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Features
+                About
               </a>
               <a 
                 href="#technology" 
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Technology
-              </a>
-              <a 
-                href="#about" 
-                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >
-                About
               </a>
               <a 
                 href="#team" 
@@ -74,11 +68,11 @@ export default function Navbar() {
         <div className="md:hidden bg-[#0f172a]/95 backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              href="#features"
+              href="#about"
               className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Features
+              About
             </a>
             <a
               href="#technology"
@@ -86,13 +80,6 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Technology
-            </a>
-            <a
-              href="#about"
-              className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
             </a>
             <a
               href="#team"
